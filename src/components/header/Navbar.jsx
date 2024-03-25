@@ -7,17 +7,17 @@ const Navbar = () => {
         <li><NavLink to="/" style={({ isActive }) => ({
             color: isActive ? '#23BE0A' : '#545e6f',
             background: isActive ? '#ffff' : '#ffff',
-            border: isActive? '2px solid #23BE0A' : 'none'
+            border: isActive ? '2px solid #23BE0A' : 'none'
         })}>Home</NavLink></li>
         <li><NavLink to='/listedBook' style={({ isActive }) => ({
             color: isActive ? '#23BE0A' : '#545e6f',
             background: isActive ? '#ffff' : '#ffff',
-            border: isActive? '2px solid #23BE0A' : 'none'
+            border: isActive ? '2px solid #23BE0A' : 'none'
         })}>Listed Books</NavLink></li>
         <li><NavLink to='pagesToRead' style={({ isActive }) => ({
             color: isActive ? '#23BE0A' : '#545e6f',
             background: isActive ? '#ffff' : '#ffff',
-            border: isActive? '2px solid #23BE0A' : 'none'
+            border: isActive ? '2px solid #23BE0A' : 'none'
         })}>Pages to Read</NavLink></li>
     </>
 
@@ -30,6 +30,8 @@ const Navbar = () => {
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         {links}
+                        <a className="btn bg-[#23BE0A] text-white">Sign In</a>
+                        <a className="btn bg-[#59C6D2] text-white">Sign up</a>
                     </ul>
                 </div>
                 <button className=" text-[#131313]  md:text-3xl font-bold">Book Explore</button>

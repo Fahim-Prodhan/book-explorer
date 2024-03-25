@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "bookName": "The Dating Playbook for Man",
+        "author": "Andrew Ferebee",
+        "image": "https://i.ibb.co/gmbfQkF/pngwing-1-1.png",
+        "review": "A comprehensive guide to mastering the art of dating, packed with practical advice and real-life examples.",
+        "totalPages": 256,
+        "rating": 4.7,
+        "category": "Self-Help",
+        "tags": ["Dating", "Relationships"],
+        "publisher": "Knowledge for Men",
+        "yearOfPublishing": 2015
+    },
+    {
+        "id": 2,
+        "bookName": "Why Do You Hate Money",
+        "author": "Ramit Sethi",
+        "image": "https://i.ibb.co/M8Yk5Rh/kindpng-7318921.png",
+        "review": "A thought-provoking exploration of personal finance, uncovering common misconceptions and offering practical strategies for financial success.",
+        "totalPages": 352,
+        "rating": 4.9,
+        "category": "Finance",
+        "tags": ["Personal Finance", "Money"],
+        "publisher": "I Will Teach You to Be Rich, Inc.",
+        "yearOfPublishing": 2021
+    },
+    {
+        "id": 3,
+        "bookName": "The Hate U Give",
+        "author": "Angie Thomas",
+        "image": "https://i.ibb.co/vVmXKc5/kindpng-1064993.png",
+        "review": "A poignant and powerful narrative that addresses themes of race, identity, and activism through the eyes of a teenage girl.",
+        "totalPages": 464,
+        "rating": 4.8,
+        "category": "Young Adult",
+        "tags": ["Social Issues", "Activism"],
+        "publisher": "Balzer + Bray",
+        "yearOfPublishing": 2017
+    },
+    {
+        "id": 4,
+        "bookName": "The Scholarship Planner",
+        "author": "Sylvia Mendoza",
+        "image": "https://i.ibb.co/L1mZNxn/kindpng-2592315-1.png",
+        "review": "An essential tool for students and parents to organize scholarship deadlines and maximize opportunities for financial aid.",
+        "totalPages": 192,
+        "rating": 4.6,
+        "category": "Education",
+        "tags": ["Scholarships", "College Planning"],
+        "publisher": "Nolo",
+        "yearOfPublishing": 2020
+    },
+    {
+        "id": 5,
+        "bookName": "Annotated Texas Family Code",
+        "author": "Thomson Reuters",
+        "image": "https://i.ibb.co/cxtFS2r/kindpng-81724-1.png",
+        "review": "A comprehensive reference guide to the Texas Family Code, featuring annotations and commentary to aid legal professionals.",
+        "totalPages": 1200,
+        "rating": 4.5,
+        "category": "Law",
+        "tags": ["Legal Reference", "Texas Law"],
+        "publisher": "Thomson Reuters",
+        "yearOfPublishing": 2022
+    },
+    {
+        "id": 6,
+        "bookName": "Loving Jesus More",
+        "author": "Phil Ryken",
+        "image": "https://i.ibb.co/yFkGf8W/kindpng-2193744-1.png",
+        "review": "A heartfelt exploration of deepening one's relationship with Jesus Christ through devotion, prayer, and biblical study.",
+        "totalPages": 192,
+        "rating": 4.7,
+        "category": "Religion",
+        "tags": ["Christian Living", "Spirituality"],
+        "publisher": "Crossway",
+        "yearOfPublishing": 2002
+    }
+]
