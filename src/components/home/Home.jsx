@@ -1,6 +1,8 @@
 // import React from 'react';
 // import PropTypes from 'prop-types';
 
+import Header from "../header/Header";
+
 Home.propTypes = {
     
 };
@@ -8,7 +10,7 @@ Home.propTypes = {
 function Home() {
     return (
         <div>
-            
+            <Header></Header>
         </div>
     );
 }

@@ -10,7 +10,7 @@ Root.propTypes = {
 
 function Root() {
     return (
-        <div className="px-[135px]">
+        <div className="md:px-[135px]">
             <Navbar></Navbar>
             <Outlet></Outlet>
         </div>

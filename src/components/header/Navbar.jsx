@@ -13,7 +13,7 @@ const Navbar = () => {
             color: isActive ? '#23BE0A' : '#545e6f',
             background: isActive ? '#ffff' : '#ffff',
             border: isActive? '2px solid #23BE0A' : 'none'
-        })}>Listed Book</NavLink></li>
+        })}>Listed Books</NavLink></li>
         <li><NavLink to='pagesToRead' style={({ isActive }) => ({
             color: isActive ? '#23BE0A' : '#545e6f',
             background: isActive ? '#ffff' : '#ffff',
@@ -22,7 +22,7 @@ const Navbar = () => {
     </>
 
     return (
-        <nav className="navbar bg-base-100 mt-12 font-workSans">
+        <nav className="navbar bg-base-100 mt-3 md:mt-12 font-workSans">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,14 +32,14 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-[#131313] text-3xl font-bold">Book Explore</a>
+                <button className=" text-[#131313]  md:text-3xl font-bold">Book Explore</button>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end hidden md:flex">
                 <a className="btn mr-3 bg-[#23BE0A] text-white">Sign In</a>
                 <a className="btn bg-[#59C6D2] text-white">Sign up</a>
             </div>
