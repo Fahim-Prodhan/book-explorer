@@ -1,6 +1,10 @@
 // import React from 'react';
 // import PropTypes from 'prop-types';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+import { addReadToLS, addWishToLS, getStoredRead, getStoredWish } from '../../utility/localStorage';
 
 BookDetails.propTypes = {
     
@@ -12,9 +16,64 @@ function BookDetails() {
     const {id} = useParams()
     const book = books.find(book=> book.id == id)
 
+    // Saving in local Storage
+    const handleRead = ()=>{
+        const existingReadInLS = getStoredRead();
+        const intId = parseInt(id)
+        if(existingReadInLS.includes(intId)){
+            toast.error('Already Exit in Read List!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+        }else{
+            addReadToLS(intId)
+            toast("Successfully Add to Read List")
+        }
+    }
+
+    const handleWish = ()=>{
+        const existingReadInLS = getStoredRead();
+        const existingWishInLS = getStoredWish();
+        const intId = parseInt(id);
+
+        if(existingReadInLS.includes(intId)){
+            toast.error('Already Exit in Read List!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+        }else if(existingWishInLS.includes(intId)){
+            toast.error('Already Exit in Wish List!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+        }else{
+            addWishToLS(intId)
+            toast("Successfully Add to Read List")
+        }
+
+    }
+
     return (
         <div className='grid grid-cols-2 mt-14 gap-12 font-workSans'>
-            <div className='place-self-center w-[573px] h-[711px] bg-[#F3F3F3] rounded-2xl'>
+            <div className='place-self-center w-[573px] h-[655px] bg-[#F3F3F3] rounded-2xl'>
                 <img className=' w-[573px] p-[75px]' src={book.image} alt="" />
             </div>
             <div className=''>
@@ -48,10 +107,11 @@ function BookDetails() {
                     <div className='grid grid-cols-2'><p>Rating:</p> <p className='font-semibold'>{book.rating}</p></div>
                 </div>
                 <div className='mt-8 flex gap-4'>
-                    <button className='btn bg-white border border-[#000] text-black'>Read</button>
-                    <button className='btn bg-[#50B1C9] text-white'>Wishlist</button>
+                    <button onClick={handleRead} className='btn bg-white border border-[#000] text-black'>Read</button>
+                    <button onClick={handleWish} className='btn bg-[#50B1C9] text-white'>Wishlist</button>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 }

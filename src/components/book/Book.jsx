@@ -23,7 +23,7 @@ function Book({ book }) {
                         <div className='flex flex-col md:flex-row'>
                             {
                                 tags.map((tag, index) => <p
-                                    className='mr-3 mt-6 px-5 py-3 bg-[#23be0a0d] rounded-[30px] text-[#23BE0A]' key={index}>{tag}
+                                    className=' text-center mr-3 mt-6 px-4 py-2 bg-[#23be0a0d] rounded-[30px] text-[#23BE0A]' key={index}>{tag}
                                 </p>)
                             }
                         </div>
