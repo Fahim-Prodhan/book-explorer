@@ -18,7 +18,7 @@ function ListedBook( ) {
     
     const hrStyle = {
         position: 'absolute',
-        top: '-1px',
+        top: '-2px',
         left: '50%',
         transform: 'translateX(-50%)',
         width: '100%',
