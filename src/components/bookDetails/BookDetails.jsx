@@ -67,7 +67,7 @@ function BookDetails() {
                 });
         }else{
             addWishToLS(intId)
-            toast("Successfully Add to Read List")
+            toast("Successfully Add to Wish List")
         }
 
     }

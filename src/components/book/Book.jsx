@@ -17,8 +17,8 @@ function Book({ book }) {
             <div className='font-workSans'>
                 <div className="card bg-base-100 shadow-xl border border-[#13131326]">
                     <div className="card-body">
-                        <div className='mx-auto bg-[#F3F3F3] px-[100px] py-[48px] rounded-2xl '>
-                            <img className='md:max-w-[144px] ' src={image} alt="" />
+                        <div className='mx-auto bg-[#F3F3F3] px-[60px] py-[48px] rounded-2xl '>
+                            <img className='w-full'  src={image} alt="" />
                         </div>
                         <div className='flex flex-col md:flex-row'>
                             {
