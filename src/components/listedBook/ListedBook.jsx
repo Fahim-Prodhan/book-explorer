@@ -1,9 +1,8 @@
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useState } from "react";
-import { NavLink, Outlet, useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 import { getStoredRead, getStoredWish } from "../../utility/localStorage";
 import ReadBook from "../readBook/ReadBook";
-import sortBy from "sort-by";
 
 
 
@@ -61,7 +60,7 @@ function ListedBook( ) {
             <h2 className="text-lg font-bold mb-4 text-white">Sort</h2>
             <div className="flex justify-center mt-8 mb-12">
                 <details className="dropdown ">
-                    <summary className=" btn bg-green-400 text-white">Sort By<span className="text-2xl"><RiArrowDropDownLine /></span></summary>
+                    <summary className=" btn bg-[#23BE0A] text-white">Sort By<span className="text-2xl"><RiArrowDropDownLine /></span></summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                         <li><a onClick={ratingSort}>Rating</a></li>
                         <li><a onClick={pageSort}>Number of Pages</a></li>

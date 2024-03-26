@@ -7,7 +7,7 @@ TopRated.propTypes = {
 
 function TopRated({topBook}) {
 
-    const { bookName, author, image, tags, category, rating } = topBook
+    const { bookName, author, image, category, rating } = topBook
 
     return (
         <Link to={`/book/${topBook.id}`}>
