@@ -1,6 +1,6 @@
 // import React from 'react';
 // import PropTypes from 'prop-types';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,6 +15,8 @@ function BookDetails() {
     const books = useLoaderData()
     const {id} = useParams()
     const book = books.find(book=> book.id == id)
+    const intId = parseInt(id);
+
 
     // Saving in local Storage
     const handleRead = ()=>{
@@ -40,7 +42,6 @@ function BookDetails() {
     const handleWish = ()=>{
         const existingReadInLS = getStoredRead();
         const existingWishInLS = getStoredWish();
-        const intId = parseInt(id);
 
         if(existingReadInLS.includes(intId)){
             toast.error('Already Exit in Read List!', {
@@ -109,6 +110,7 @@ function BookDetails() {
                 <div className='mt-8 flex gap-4'>
                     <button onClick={handleRead} className='btn bg-white border border-[#000] text-black'>Read</button>
                     <button onClick={handleWish} className='btn bg-[#50B1C9] text-white'>Wishlist</button>
+                    <Link to={`/author/${intId}`}><button className='btn bg-[#23BE0A] text-white'>Author Profile</button></Link>
                 </div>
             </div>
             <ToastContainer />

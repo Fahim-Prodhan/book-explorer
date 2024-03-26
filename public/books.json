@@ -10,7 +10,8 @@
         "category": "Self-Help",
         "tags": ["Dating", "Relationships"],
         "publisher": "Knowledge for Men",
-        "yearOfPublishing": 2015
+        "yearOfPublishing": 2015,
+        "authorProfile": ["Andrew Ferebee", "https://www.knowledgeformen.com/wp-content/uploads/2015/12/profile-copy.jpg", "1980-05-15", "United States"]
     },
     {
         "id": 2,
@@ -23,7 +24,8 @@
         "category": "Finance",
         "tags": ["Personal Finance", "Money"],
         "publisher": "I Will Teach You to Be Rich, Inc.",
-        "yearOfPublishing": 2021
+        "yearOfPublishing": 2021,
+        "authorProfile": ["Ramit Sethi", "https://images.squarespace-cdn.com/content/v1/5cd3397094d71a1749edc79d/1643138780236-3ZRZQPZESWSCRJBZ5COJ/Ramit%2BSethi%2BHeadshot_credit%2BChris%2BNewhard%2B%28Booklight%29.jpg", "1982-06-30", "United States"]
     },
     {
         "id": 3,
@@ -36,7 +38,8 @@
         "category": "Young Adult",
         "tags": ["Social Issues", "Activism"],
         "publisher": "Balzer + Bray",
-        "yearOfPublishing": 2017
+        "yearOfPublishing": 2017,
+        "authorProfile": ["Angie Thomas", "https://ca-times.brightspotcdn.com/dims4/default/ed129c9/2147483647/strip/true/crop/3136x4520+0+0/resize/1200x1730!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffb%2F8f%2F40daa7c04fd43f22e17573960ab4%2F1657a78be9de462e84938520de6989d9", "1988-09-20", "United States"]
     },
     {
         "id": 4,
@@ -49,7 +52,8 @@
         "category": "Education",
         "tags": ["Scholarships", "College Planning"],
         "publisher": "Nolo",
-        "yearOfPublishing": 2020
+        "yearOfPublishing": 2020,
+        "authorProfile": ["Sylvia Mendoza", "https://www.sylvia-mendoza.com/wp-content/uploads/2019/03/Sylvia-Mendoza-Headshot-2014-1.jpg", "1975-03-10", "United States"]
     },
     {
         "id": 5,
@@ -62,7 +66,8 @@
         "category": "Law",
         "tags": ["Legal Reference", "Texas Law"],
         "publisher": "Thomson Reuters",
-        "yearOfPublishing": 2022
+        "yearOfPublishing": 2022,
+        "authorProfile": ["Thomson Reuters", "https://media.licdn.com/dms/image/D4E22AQF_eTuQ5LwVdw/feedshare-shrink_800/0/1685959512464?e=2147483647&v=beta&t=I26k59HjCfVHLFWGD_f0CmjPI3zt3IQUIiseiZccDyo", "1952-11-28", "United States"]
     },
     {
         "id": 6,
@@ -75,6 +80,7 @@
         "category": "Religion",
         "tags": ["Christian Living", "Spirituality"],
         "publisher": "Crossway",
-        "yearOfPublishing": 2002
+        "yearOfPublishing": 2002,
+        "authorProfile": ["Phil Ryken", "https://www.wheaton.edu/media/about/Philip-Ryken-10-22-with-seal.jpg", "1967-02-17", "United States"]
     }
 ]
