@@ -78,7 +78,7 @@ function BookDetails() {
                 <img className=' w-[573px] p-[75px]' src={book.image} alt="" />
             </div>
             <div className=''>
-                <h1 className='font-playfair text-[40px] font-bold'>{book.bookName}</h1>
+                <h1 className='font-playfair text-3xl md:text-[40px] font-bold'>{book.bookName}</h1>
                 <p className='pt-4 text-[20px] font-medium'>By: {book.author}</p>
                 <div className='mt-6 mb-4'>
                     <hr />

@@ -9,11 +9,11 @@ import Root from './components/root/Root';
 import Home from './components/home/Home';
 import BookDetails from './components/bookDetails/BookDetails';
 import ListedBook from './components/listedBook/ListedBook';
-import ReadBooks from './components/readBooks/ReadBooks';
-import WishlistBooks from './components/wishlistBooks/WishlistBooks';
+
 import PageToRead from './components/pageToRead/PageToRead';
 import ErrorElement from './components/errorElement/ErrorElement';
 import AuthorProfile from './components/authorProfile/AuthorProfile';
+import TopRatedBooks from './components/topRateBooks/TopRatedBooks';
 
 const router = createBrowserRouter([
   {
@@ -34,18 +34,7 @@ const router = createBrowserRouter([
         path:'/listedBooks',
         element:<ListedBook></ListedBook>,
         loader:()=>fetch('../books.json'),
-        children:[
-          {
-            path: '/listedBooks',
-            element:<ReadBooks></ReadBooks>,
-            loader:()=>fetch('../books.json'),
-          },
-          {
-            path:'/listedBooks/wish',
-            element:<WishlistBooks></WishlistBooks>,
-            loader:()=>fetch('../books.json'),
-          }
-        ]
+        
       },
       {
         path:'/pagesToRead',
@@ -57,10 +46,16 @@ const router = createBrowserRouter([
         element: <AuthorProfile></AuthorProfile>,
         loader:()=>fetch('../books.json')
 
+      },{
+        path:'topRated',
+        element:<TopRatedBooks></TopRatedBooks>,
+        loader:()=>fetch('../books.json')
+
       }
     ]
   },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

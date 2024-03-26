@@ -19,6 +19,11 @@ const Navbar = () => {
             background: isActive ? '#ffff' : '#ffff',
             border: isActive ? '2px solid #23BE0A' : 'none'
         })}>Pages to Read</NavLink></li>
+        <li><NavLink to='topRated' style={({ isActive }) => ({
+            color: isActive ? '#23BE0A' : '#545e6f',
+            background: isActive ? '#ffff' : '#ffff',
+            border: isActive ? '2px solid #23BE0A' : 'none'
+        })}>Top Rated</NavLink></li>
     </>
 
     return (
