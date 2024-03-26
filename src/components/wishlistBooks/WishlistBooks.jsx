@@ -14,7 +14,7 @@ function WishlistBooks() {
     const localStorageWishList = getStoredWish(); 
     const wishlistBooks = allBooks.filter(book => localStorageWishList.includes(book.id))
     return (
-        <div>
+        <div className='grid gap-8'>
             {
                 wishlistBooks.map(wishlistBook=><WishlistBook key={wishlistBook.id} wishlistBook={wishlistBook}></WishlistBook>)
             }
