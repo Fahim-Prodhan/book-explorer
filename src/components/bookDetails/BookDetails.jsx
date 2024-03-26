@@ -72,8 +72,8 @@ function BookDetails() {
     }
 
     return (
-        <div className='grid grid-cols-2 mt-14 gap-12 font-workSans'>
-            <div className='place-self-center w-[573px] h-[655px] bg-[#F3F3F3] rounded-2xl'>
+        <div className='grid md:grid-cols-2 mt-14 gap-12 font-workSans px-6 md:px-0'>
+            <div className='place-self-center md:w-[573px] md:h-[655px] bg-[#F3F3F3] rounded-2xl'>
                 <img className=' w-[573px] p-[75px]' src={book.image} alt="" />
             </div>
             <div className=''>

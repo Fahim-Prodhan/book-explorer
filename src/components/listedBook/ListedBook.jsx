@@ -27,12 +27,12 @@ function ListedBook() {
     }
 
     return (
-        <div className="mt-9">
+        <div className="mt-9 px-6">
             <h1 className="text-[28px] font-bold text-center py-8 bg-[#1313130d] rounded-2xl">Books</h1>
             <div className="text-center my-8"><button className="btn">Sort</button></div>
             <div className="flex gap-3">
-                <NavLink onClick={handleReadToggle} className={read && ' mt px-3 rounded-[3px] border-[#1313134d] border-2 border-b-white bg-white'} to='/listedBooks'>Read Books</NavLink>
-                <NavLink onClick={handleWishToggle} className={wish && ' px-3 rounded-[3px] border-[#1313134d] border-2 border-b-white bg-white'} to='/listedBooks/wish'>Wishlist Books</NavLink>
+                <NavLink onClick={handleReadToggle} className={read ? ' text-[#000] py-2 px-3 rounded-[4px] border-[#1313134d] border-2 border-b-white bg-white': 'py-2 '} to='/listedBooks'>Read Books</NavLink>
+                <NavLink onClick={handleWishToggle} className={wish ? 'text-[#000] py-2  px-3 rounded-[4px] border-[#1313134d] border-2 border-b-white bg-white': 'py-2 '} to='/listedBooks/wish'>Wishlist Books</NavLink>
             </div>
 
             <div className="mb-6 relative">

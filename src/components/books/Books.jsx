@@ -11,9 +11,9 @@ function Books() {
             .then(data => setBooks(data))
     }, [])
     return (
-        <div>
+        <div >
             <h1 className='text-center text-[#131313] font-playfair font-bold text-[40px] mb-6'>Books</h1>
-            <div className='grid grid-cols-3 gap-6'>
+            <div className='grid md:grid-cols-3 gap-6'>
                 {
                     books.map((book) => <Book book={book} key={book.id}></Book>)
                 }

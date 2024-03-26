@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import locationImg from '../../assets/img/loaction.svg'
 import profileImg from '../../assets/img/profile.svg'
 import pageImg from '../../assets/img/page.svg'
+import { Link } from 'react-router-dom';
 
 
 ReadBook.propTypes = {
@@ -35,20 +36,20 @@ function ReadBook({ listedBook }) {
                                         </p>)
                                     }
                                 </div>
-                                <div className='flex gap-4'>
+                                <div className='flex gap-1'>
                                     <img src={locationImg} alt="" />
                                     <p>Year of Publishing: {yearOfPublishing}</p>
                                 </div>
                             </div>
 
-                            <div className='flex  nd:gap-6 flex-col md:flex-row'>
-                                <div className='flex gap-4 mt-6'>
+                            <div className='flex  md:gap-6 flex-col md:flex-row'>
+                                <div className='flex gap-2 mt-6'>
                                     <img src={profileImg} alt="" />
                                     <p>Publisher: {publisher}</p>
                                 </div>
-                                <div className='flex gap-4 mt-6'>
+                                <div className='flex gap-1 mt-6'>
                                     <img src={pageImg} alt="" />
-                                    <p>Publisher: {totalPages}</p>
+                                    <p>Page {totalPages}</p>
                                 </div>
                             </div>
 
@@ -59,7 +60,7 @@ function ReadBook({ listedBook }) {
                             <div className='grid md:grid-cols-4 gap-3'>
                                 <p className=' text-center px-4 py-2 bg-[#328eff26] rounded-[30px] text-[#328EFF]'>Category: {category}</p>
                                 <p className=' text-center px-4 py-2 bg-[#ffac3326] rounded-[30px] text-[#FFAC33]'>Rating: {rating}</p>
-                                <p className=' text-center px-4 py-2 bg-[#23BE0A] rounded-[30px] text-[#fff]'>View Details</p>
+                                <Link to={`/book/${listedBook.id}`}><p className=' text-center px-4 py-2 bg-[#23BE0A] rounded-[30px] text-[#fff]'>View Details</p></Link>
                             </div>
                         </div>
                     </div>

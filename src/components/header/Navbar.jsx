@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Navbar.css'
 
 const Navbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
                         <a className="btn bg-[#59C6D2] text-white">Sign up</a>
                     </ul>
                 </div>
-                <button className=" text-[#131313]  md:text-3xl font-bold">Book Explore</button>
+                <Link to={'/'}><button className=" text-[#131313]  md:text-3xl font-bold">Book Explore</button></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

@@ -11,8 +11,8 @@ Home.propTypes = {
 function Home() {
     return (
         <div>
-            <Header></Header>
-            <div className="mt-[100px]">
+            <div className="mx-6"><Header></Header></div>
+            <div className="mt-[100px] mx-6 md:mx-0">
                 <Books></Books>
             </div>
         </div>
